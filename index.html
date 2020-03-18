@@ -9,19 +9,20 @@
 
 <style type="text/css">
     html { width: 100%; text-size-adjust: none; }
-    
+
     body {
         width: 210mm;
         margin: 1em auto;
         font-family: "Arial", Times, serif;
     }
 
-    button {font-size: 2em; border: 1px solid black;}
+    button {font-size: 1.5em; border: 1px solid grey;border-radius: 5px;}
     footer {font-size: 1em; margin-top: 50px;}
     canvas {border-radius: 8px;}
 
     #page {
-        border: 1px solid black;
+        border: 1px solid grey;
+        border-radius: 15px;
         padding: 1em;
     }
 
@@ -37,11 +38,13 @@
     #name, #born, #address {
         width: 10em;
         border: 1px solid #999;
+        border-radius: 5px;
         margin-bottom: 1em;
     }
 
     #date, #place {
         border: 1px solid #999;
+        border-radius: 5px;
     }
 
     @media screen and (max-width : 640px) {
@@ -112,7 +115,7 @@
         <label for="place">Fait à </label><input type="text" id="place">
         <label for="date">&nbsp;le </label><input type="date" id="date"><br>
         (signature)<br/><br/>
-        <canvas style="border: 1px solid #999" id="signature" width="600" height="200"></canvas><br/>
+        <canvas style="border: 1px solid #999, border-radius 15px" id="signature" width="600" height="200"></canvas><br/>
         <button onclick="can_clear();" id="clear_btn">Effacer</button>
 
     </p>
