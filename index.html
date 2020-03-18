@@ -217,13 +217,13 @@
             $(el).remove();
         });
 
-        to_disable = ['choix_a', 'choix_b', 'choix_c', 'choix_d', 'choix_e'];
-        to_disable.forEach(function(el) {
-            if (!$(el).checked) {
-                $(el).remove();
-                $('label_' + el).remove();
-            }
-        });
+        // to_disable = ['choix_a', 'choix_b', 'choix_c', 'choix_d', 'choix_e'];
+        // to_disable.forEach(function(el) {
+        //     if (!$(el).checked) {
+        //         $(el).remove();
+        //         $('label_' + el).remove();
+        //     }
+        // });
 
         window.print();
     }
